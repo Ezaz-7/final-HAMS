@@ -1,0 +1,97 @@
+/* General Page Styles */
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%); /* Start from below the viewport */
+    opacity: 0; /* Start with no visibility */
+  }
+  to {
+    transform: translateY(0); /* End at its original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+/* Signup Container */
+.signup-container {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the signup card */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 30px;
+  height: 80vh; /* Adjusted height for better fit */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: absolute;
+  top: 7vh;
+  left: 10vw; 
+  animation: slideInFromBottom 0.8s ease-in; /* Apply the animation */
+}
+
+/* Title and Subtitle */
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.signup-subtitle {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.signup-form .form-label {
+  font-weight: bold;
+  color: #333333;
+}
+
+.signup-form .form-control {
+  border-radius: 8px;
+}
+
+/* Link Styles */
+.login-link {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.signup-image-container {
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0 0 15px; /* Rounded corners on the right side */
+  overflow: hidden; /* Ensures the image fits within the container */
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Start from outside the viewport on the right */
+    opacity: 0; /* Start with no visibility */
+  }
+  to {
+    transform: translateX(0); /* End at its original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.signup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideInFromRight 0.8s ease-in; /* Apply the animation */
+}

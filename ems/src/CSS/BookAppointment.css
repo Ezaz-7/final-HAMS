@@ -1,0 +1,349 @@
+/* General Page Styles */
+.book-appointment-page {
+  background: lightblue; /* Calming light blue gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px; /* Spacious padding for the page */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  animation: fadeIn 0.8s ease-in-out; /* Smooth fade-in effect */
+}
+
+.page-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #00838f; /* Teal heading */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styling */
+.table-container {
+  margin-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.table-container h3 {
+  color: #00838f;
+  padding: 20px;
+  margin-bottom: 0;
+  background-color: #e0f7fa;
+  border-bottom: 1px solid #b2ebf2;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #00838f; /* Teal header */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #00acc1;
+}
+
+.table tbody td {
+  padding: 12px;
+  text-align: center;
+  color: #263238; /* Dark grey text */
+  border-bottom: 1px solid #eceeef;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.time-slots-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.time-slot {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.time-slot.available {
+  background-color: #e6ffe9;
+  color: #388e3c; /* Green for available */
+}
+
+.time-slot.booked {
+  background-color: #ffebee;
+  color: #d32f2f; /* Red for booked */
+  font-weight: bold;
+}
+
+.select-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid #00838f;
+  color: #00838f;
+}
+
+.select-button:hover:enabled {
+  background-color: #00acc1;
+  color: white;
+  border-color: #00acc1;
+}
+
+.select-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Booking Modal Styles */
+.booking-modal .modal-content {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.booking-modal .modal-header {
+  background-color: #b2ebf2;
+  color: #00838f;
+  border-bottom: 1px solid #80deea;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px 20px;
+}
+
+.booking-modal .modal-title {
+  font-weight: bold;
+}
+
+.booking-modal .modal-body {
+  padding: 20px;
+}
+
+.booking-modal .modal-body h4 {
+  color: #00838f;
+  margin-bottom: 10px;
+}
+
+.booking-modal .modal-body p {
+  color: #263238;
+  margin-bottom: 15px;
+}
+
+.form-label-style {
+  font-weight: bold;
+  color: #00838f;
+  margin-bottom: 8px;
+}
+
+.form-control-style {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control-style:focus {
+  border-color: #00acc1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 172, 193, 0.5);
+}
+
+.book-button {
+  background-color: #00838f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-button:hover {
+  background-color: #00acc1;
+  transform: scale(1.05);
+}
+
+.book-button:active {
+  transform: scale(0.95);
+}
+
+.close-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+.close-button:active {
+  transform: scale(0.95);
+}
+
+/* Success Modal Styles */
+.success-modal .modal-content {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.success-modal .modal-header-style-success {
+  background-color: #a7f3d0; /* Light green */
+  color: #166534; /* Dark green */
+  border-bottom: 1px solid #6ee7b7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px 20px;
+}
+
+.success-modal .modal-title-style-success {
+  font-weight: bold;
+}
+
+.success-modal .modal-body-style-success {
+  padding: 20px;
+  color: #166534;
+  text-align: center;
+}
+
+.success-modal .modal-body-style-success p {
+  font-size: 1.1rem;
+}
+
+.success-modal .modal-footer-style-success {
+  padding: 15px 20px;
+  border-top: 1px solid #6ee7b7;
+  display: flex;
+  justify-content: center;
+}
+
+.success-modal .ok-button {
+  background-color: #166534; /* Dark green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.success-modal .ok-button:hover {
+  background-color: #0f5132;
+  transform: scale(1.05);
+}
+
+.success-modal .ok-button:active {
+  transform: scale(0.95);
+}
+
+/* Alert Styling */
+.response-alert {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .table-container h3 {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  .table thead th {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .table tbody td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .time-slot {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .select-button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
